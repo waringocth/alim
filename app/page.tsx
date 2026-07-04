@@ -258,7 +258,7 @@ const staggerItem: Variants = {
 ───────────────────────────────────────────────────────────── */
 function HeroSection() {
   return (
-    <section className="relative min-h-[90vh] flex items-center bg-[#1a2d5a] overflow-hidden">
+    <section className="relative flex items-center bg-[#1a2d5a] overflow-hidden py-8 md:min-h-[90vh] md:py-0">
       {/* Diagonal line geometric pattern */}
       <div className="absolute inset-0 opacity-[0.06] pointer-events-none">
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
@@ -277,7 +277,7 @@ function HeroSection() {
       <div className="absolute top-[-100px] right-[-80px] w-[500px] h-[500px] rounded-full bg-[#5aaccc]/10 blur-3xl pointer-events-none" />
       <div className="absolute bottom-[-80px] left-[-60px] w-[400px] h-[400px] rounded-full bg-[#e87722]/10 blur-3xl pointer-events-none" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20 lg:py-28">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-4 lg:py-28">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           {/* LEFT: Text content */}
@@ -287,7 +287,7 @@ function HeroSection() {
             animate="visible"
           >
             {/* Badge */}
-            <motion.div variants={staggerItem}>
+            <motion.div variants={staggerItem} className="hidden md:block">
               <span className="inline-flex items-center gap-2 bg-[#e87722]/20 text-[#e87722] border border-[#e87722]/30 text-xs font-bold tracking-widest uppercase px-4 py-2 rounded-full mb-6">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#e87722] animate-pulse" />
                 İstanbul&apos;un Güvenilir Cam Sistemi Uzmanı
@@ -297,7 +297,7 @@ function HeroSection() {
             {/* H1 */}
             <motion.h1
               variants={staggerItem}
-              className="text-4xl sm:text-5xl lg:text-[3.25rem] xl:text-6xl font-extrabold text-white leading-[1.15] mb-6"
+              className="text-2xl sm:text-4xl lg:text-[3.25rem] xl:text-6xl font-extrabold text-white leading-[1.2] mb-3 md:mb-6"
             >
               İstanbul&apos;un Güvenilir{" "}
               <span className="text-[#e87722]">Alüminyum & Cam Balkon</span>{" "}
@@ -307,16 +307,16 @@ function HeroSection() {
             {/* Subtitle */}
             <motion.p
               variants={staggerItem}
-              className="text-white/75 text-lg sm:text-xl leading-relaxed mb-10 max-w-xl"
+              className="hidden md:block text-white/75 text-lg sm:text-xl leading-relaxed mb-10 max-w-xl"
             >
               10 yıllık deneyimle İstanbul&apos;un tüm ilçelerinde profesyonel montaj ve kurulum hizmetleri sunuyoruz.
             </motion.p>
 
             {/* CTAs */}
-            <motion.div variants={staggerItem} className="flex flex-wrap gap-4 mb-12">
+            <motion.div variants={staggerItem} className="flex flex-col sm:flex-row flex-wrap gap-3 mb-4 md:mb-12">
               <a
                 href="tel:+905433057484"
-                className="inline-flex items-center gap-2 bg-[#e87722] text-white px-7 py-4 rounded-xl font-bold text-base hover:bg-[#c5611a] transition-all duration-200 shadow-[0_6px_20px_rgba(232,119,34,0.45)] hover:shadow-[0_8px_28px_rgba(232,119,34,0.55)] hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center gap-2 bg-[#e87722] text-white px-6 py-3 md:px-7 md:py-4 rounded-xl font-bold text-base hover:bg-[#c5611a] transition-all duration-200 shadow-[0_6px_20px_rgba(232,119,34,0.45)] hover:shadow-[0_8px_28px_rgba(232,119,34,0.55)] hover:-translate-y-0.5 w-full sm:w-auto"
               >
                 <Phone className="w-5 h-5" />
                 0543 305 74 84
@@ -325,7 +325,7 @@ function HeroSection() {
                 href="https://wa.me/905433057484"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-transparent text-white border-2 border-white/50 px-7 py-4 rounded-xl font-bold text-base hover:bg-white hover:text-[#1a2d5a] hover:border-white transition-all duration-200 hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center gap-2 bg-transparent text-white border-2 border-white/50 px-6 py-3 md:px-7 md:py-4 rounded-xl font-bold text-base hover:bg-white hover:text-[#1a2d5a] hover:border-white transition-all duration-200 hover:-translate-y-0.5 w-full sm:w-auto"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 flex-shrink-0">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
@@ -335,25 +335,25 @@ function HeroSection() {
             </motion.div>
 
             {/* Phone pills */}
-            <motion.div variants={staggerItem} className="flex flex-wrap gap-3">
+            <motion.div variants={staggerItem} className="flex flex-wrap gap-2 md:gap-3">
               <a
                 href="tel:05433057484"
-                className="flex items-center gap-2.5 bg-white/10 hover:bg-white/18 backdrop-blur-sm text-white px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 border border-white/15 hover:border-white/30"
+                className="flex items-center gap-2 bg-white/10 hover:bg-white/18 backdrop-blur-sm text-white px-3 py-2 md:px-4 md:py-2.5 rounded-xl text-xs md:text-sm font-medium transition-all duration-200 border border-white/15 hover:border-white/30"
               >
-                <Phone className="w-4 h-4 text-[#e87722] flex-shrink-0" />
+                <Phone className="w-3.5 h-3.5 md:w-4 md:h-4 text-[#e87722] flex-shrink-0" />
                 <div className="flex flex-col leading-tight">
-                  <span className="text-white/50 text-[10px] font-semibold tracking-wide uppercase">Hüzeyfe TURHAN</span>
-                  <span>0543 305 74 84</span>
+                  <span className="text-white/50 text-[9px] md:text-[10px] font-semibold tracking-wide uppercase">Hüzeyfe TURHAN</span>
+                  <span className="text-xs md:text-sm">0543 305 74 84</span>
                 </div>
               </a>
               <a
                 href="tel:05302418755"
-                className="flex items-center gap-2.5 bg-white/10 hover:bg-white/18 backdrop-blur-sm text-white px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-200 border border-white/15 hover:border-white/30"
+                className="flex items-center gap-2 bg-white/10 hover:bg-white/18 backdrop-blur-sm text-white px-3 py-2 md:px-4 md:py-2.5 rounded-xl text-xs md:text-sm font-medium transition-all duration-200 border border-white/15 hover:border-white/30"
               >
-                <Phone className="w-4 h-4 text-[#e87722] flex-shrink-0" />
+                <Phone className="w-3.5 h-3.5 md:w-4 md:h-4 text-[#e87722] flex-shrink-0" />
                 <div className="flex flex-col leading-tight">
-                  <span className="text-white/50 text-[10px] font-semibold tracking-wide uppercase">Sefer KÖSE</span>
-                  <span>0530 241 87 55</span>
+                  <span className="text-white/50 text-[9px] md:text-[10px] font-semibold tracking-wide uppercase">Sefer KÖSE</span>
+                  <span className="text-xs md:text-sm">0530 241 87 55</span>
                 </div>
               </a>
             </motion.div>
