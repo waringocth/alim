@@ -4,7 +4,7 @@ import { districts } from '@/lib/districts'
 import { getSortedPostsData } from '@/lib/blog'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = process.env.SITE_URL || 'https://www.dhscamsistemleri.com'
+  const baseUrl = process.env.SITE_URL || 'https://www.dhsaluminyum.com'
 
   const serviceUrls: MetadataRoute.Sitemap = services.map((service) => ({
     url: `${baseUrl}/hizmetler/${service.slug}`,

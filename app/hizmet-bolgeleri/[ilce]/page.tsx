@@ -48,10 +48,10 @@ export async function generateMetadata({
       description,
       type: "website",
       locale: "tr_TR",
-      url: `https://www.dhscamsistemleri.com/hizmet-bolgeleri/${district.slug}`,
+      url: `https://www.dhsaluminyum.com/hizmet-bolgeleri/${district.slug}`,
     },
     alternates: {
-      canonical: `https://www.dhscamsistemleri.com/hizmet-bolgeleri/${district.slug}`,
+      canonical: `https://www.dhsaluminyum.com/hizmet-bolgeleri/${district.slug}`,
     },
   };
 }
@@ -65,13 +65,13 @@ function buildJsonLd(districtName: string, slug: string) {
     "@graph": [
       {
         "@type": "LocalBusiness",
-        "@id": `https://www.dhscamsistemleri.com/#localbusiness`,
+        "@id": `https://www.dhsaluminyum.com/#localbusiness`,
         name: "DHS Alüminyum & Cam Balkon Sistemleri",
         description: `${districtName} ilçesinde cam balkon, alüminyum doğrama ve PVC pencere sistemleri kurulumu`,
-        url: "https://www.dhscamsistemleri.com",
+        url: "https://www.dhsaluminyum.com",
         telephone: "+905433057484",
         priceRange: "$$",
-        image: "https://www.dhscamsistemleri.com/og-image.jpg",
+        image: "https://www.dhsaluminyum.com/og-image.jpg",
         address: {
           "@type": "PostalAddress",
           streetAddress: "Ulus Mahallesi, İstiklal Caddesi No/37",
@@ -99,7 +99,7 @@ function buildJsonLd(districtName: string, slug: string) {
             name: `${districtName}, İstanbul, Türkiye`,
           },
         ],
-        sameAs: ["https://www.dhscamsistemleri.com"],
+        sameAs: ["https://www.dhsaluminyum.com"],
       },
       {
         "@type": "Service",
@@ -124,16 +124,16 @@ function buildJsonLd(districtName: string, slug: string) {
       },
       {
         "@type": "WebPage",
-        "@id": `https://www.dhscamsistemleri.com/hizmet-bolgeleri/${slug}`,
-        url: `https://www.dhscamsistemleri.com/hizmet-bolgeleri/${slug}`,
+        "@id": `https://www.dhsaluminyum.com/hizmet-bolgeleri/${slug}`,
+        url: `https://www.dhsaluminyum.com/hizmet-bolgeleri/${slug}`,
         name: `${districtName} Cam Balkon Sistemleri | DHS`,
         description: `${districtName} ilçesinde cam balkon, PVC pencere ve alüminyum doğrama. Ücretsiz keşif için arayın.`,
         breadcrumb: {
           "@type": "BreadcrumbList",
           itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://www.dhscamsistemleri.com" },
-            { "@type": "ListItem", position: 2, name: "Hizmet Bölgeleri", item: "https://www.dhscamsistemleri.com/hizmet-bolgeleri" },
-            { "@type": "ListItem", position: 3, name: districtName, item: `https://www.dhscamsistemleri.com/hizmet-bolgeleri/${slug}` },
+            { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://www.dhsaluminyum.com" },
+            { "@type": "ListItem", position: 2, name: "Hizmet Bölgeleri", item: "https://www.dhsaluminyum.com/hizmet-bolgeleri" },
+            { "@type": "ListItem", position: 3, name: districtName, item: `https://www.dhsaluminyum.com/hizmet-bolgeleri/${slug}` },
           ],
         },
       },

@@ -11,10 +11,10 @@ export const metadata: Metadata = {
     description: "Cam balkon sistemleri ve yapı sektörü hakkında güncel yazılar.",
     type: "website",
     locale: "tr_TR",
-    url: "https://www.dhscamsistemleri.com/blog",
+    url: "https://www.dhsaluminyum.com/blog",
   },
   alternates: {
-    canonical: "https://www.dhscamsistemleri.com/blog",
+    canonical: "https://www.dhsaluminyum.com/blog",
   },
 };
 

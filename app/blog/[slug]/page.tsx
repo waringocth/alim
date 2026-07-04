@@ -23,10 +23,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       type: "article",
       publishedTime: post.date,
       authors: ["DHS Ekibi"],
-      url: `https://www.dhscamsistemleri.com/blog/${slug}`,
+      url: `https://www.dhsaluminyum.com/blog/${slug}`,
     },
     alternates: {
-      canonical: `https://www.dhscamsistemleri.com/blog/${slug}`,
+      canonical: `https://www.dhsaluminyum.com/blog/${slug}`,
     },
   };
 }

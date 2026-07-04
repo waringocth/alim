@@ -126,7 +126,7 @@ export default function IletisimClient() {
                     </div>
                     <div>
                       <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wide mb-1">Web Sitemiz</h3>
-                      <p className="text-[#1a2d5a] font-bold">dhscamsistemleri.com</p>
+                      <p className="text-[#1a2d5a] font-bold">dhsaluminyum.com</p>
                     </div>
                   </div>
                 </motion.div>

@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://www.dhscamsistemleri.com
-
-# Sitemaps
-Sitemap: https://www.dhscamsistemleri.com/sitemap.xml

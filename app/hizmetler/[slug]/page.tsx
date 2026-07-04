@@ -46,10 +46,10 @@ export async function generateMetadata({
       description: service.metaDescription,
       type: "website",
       locale: "tr_TR",
-      url: `https://www.dhscamsistemleri.com/hizmetler/${service.slug}`,
+      url: `https://www.dhsaluminyum.com/hizmetler/${service.slug}`,
     },
     alternates: {
-      canonical: `https://www.dhscamsistemleri.com/hizmetler/${service.slug}`,
+      canonical: `https://www.dhsaluminyum.com/hizmetler/${service.slug}`,
     },
   };
 }

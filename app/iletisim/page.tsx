@@ -10,10 +10,10 @@ export const metadata: Metadata = {
     description: "Ücretsiz keşif ve fiyat teklifi için bize ulaşın.",
     type: "website",
     locale: "tr_TR",
-    url: "https://www.dhscamsistemleri.com/iletisim",
+    url: "https://www.dhsaluminyum.com/iletisim",
   },
   alternates: {
-    canonical: "https://www.dhscamsistemleri.com/iletisim",
+    canonical: "https://www.dhsaluminyum.com/iletisim",
   },
 };
 

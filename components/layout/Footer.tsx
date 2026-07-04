@@ -39,12 +39,12 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <Globe className="w-5 h-5 text-[#e87722] flex-shrink-0" />
               <a
-                href="https://www.dhscamsistemleri.com"
+                href="https://www.dhsaluminyum.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/75 text-sm hover:text-[#e87722] transition-colors duration-200"
               >
-                www.dhscamsistemleri.com
+                www.dhsaluminyum.com
               </a>
             </div>
             {/* Working hours */}

@@ -28,11 +28,11 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "DHS Alüminyum & Cam Balkon Sistemleri" }],
   creator: "DHS Alüminyum & Cam Balkon Sistemleri",
-  metadataBase: new URL("https://www.dhscamsistemleri.com"),
+  metadataBase: new URL("https://www.dhsaluminyum.com"),
   openGraph: {
     type: "website",
     locale: "tr_TR",
-    url: "https://www.dhscamsistemleri.com",
+    url: "https://www.dhsaluminyum.com",
     siteName: "DHS Cam Sistemleri",
     title: "DHS Alüminyum & Cam Balkon Sistemleri | İstanbul",
     description:
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://www.dhscamsistemleri.com",
+    canonical: "https://www.dhsaluminyum.com",
   },
 };
 
@@ -68,7 +68,7 @@ const jsonLd = {
     "addressCountry": "TR"
   },
   "telephone": "+905433057484",
-  "url": "https://www.dhscamsistemleri.com",
+  "url": "https://www.dhsaluminyum.com",
   "areaServed": {
     "@type": "AdministrativeArea",
     "name": "İstanbul"

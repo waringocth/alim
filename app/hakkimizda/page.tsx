@@ -16,10 +16,10 @@ export const metadata: Metadata = {
     description: "DHS Alüminyum & Cam Balkon Sistemleri kimdir? 10 yıllık deneyimimiz ve değerlerimiz.",
     type: "website",
     locale: "tr_TR",
-    url: "https://www.dhscamsistemleri.com/hakkimizda",
+    url: "https://www.dhsaluminyum.com/hakkimizda",
   },
   alternates: {
-    canonical: "https://www.dhscamsistemleri.com/hakkimizda",
+    canonical: "https://www.dhsaluminyum.com/hakkimizda",
   },
 };
 

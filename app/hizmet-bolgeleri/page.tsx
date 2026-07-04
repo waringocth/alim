@@ -19,10 +19,10 @@ export const metadata: Metadata = {
       "İstanbul'un tüm ilçelerinde profesyonel cam balkon, PVC pencere ve alüminyum doğrama montajı. Bölgenizi seçin, ücretsiz keşif isteyin.",
     type: "website",
     locale: "tr_TR",
-    url: "https://www.dhscamsistemleri.com/hizmet-bolgeleri",
+    url: "https://www.dhsaluminyum.com/hizmet-bolgeleri",
   },
   alternates: {
-    canonical: "https://www.dhscamsistemleri.com/hizmet-bolgeleri",
+    canonical: "https://www.dhsaluminyum.com/hizmet-bolgeleri",
   },
 };
 
