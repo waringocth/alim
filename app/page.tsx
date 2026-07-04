@@ -3,6 +3,7 @@
 import { useRef, useEffect, useState } from "react";
 import { motion, useInView, Variants } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Layers,
   Shield,
@@ -24,6 +25,9 @@ import {
   Calendar,
   ChevronRight,
   Frame,
+  PanelTopOpen,
+  LayoutTemplate,
+  ScanLine,
 } from "lucide-react";
 
 /* ─────────────────────────────────────────────────────────────
@@ -137,6 +141,30 @@ const services = [
     title: "Duşakabin Sistemleri",
     description: "Banyo için şık ve modern duşakabin çözümleri.",
     href: "/hizmetler/dusakabin",
+  },
+  {
+    icon: Wind,
+    title: "Biyoklimatik Pergole",
+    description: "Motorlu döner lamel ve yağmur sensörlü akıllı teras sistemi.",
+    href: "/hizmetler/biyoklimatik-pergole",
+  },
+  {
+    icon: PanelTopOpen,
+    title: "Zip Perde Sistemleri",
+    description: "Fermuar kılavuzlu, rüzgarda sabit dış cephe güneş kontrol perdesi.",
+    href: "/hizmetler/zip-perde",
+  },
+  {
+    icon: LayoutTemplate,
+    title: "Wintente Sistemleri",
+    description: "Cam ve kumaş hibrit cephe sistemi ile dört mevsim konfor.",
+    href: "/hizmetler/wintente",
+  },
+  {
+    icon: ScanLine,
+    title: "Fotosel Kapı Sistemleri",
+    description: "AVM, ofis ve hastane girişleri için otomatik kayar kapı sistemi.",
+    href: "/hizmetler/fotoselli-kapi",
   },
 ];
 
@@ -286,19 +314,24 @@ function HeroSection() {
 
             {/* CTAs */}
             <motion.div variants={staggerItem} className="flex flex-wrap gap-4 mb-12">
-              <Link
-                href="/hizmetler"
+              <a
+                href="tel:+905433057484"
                 className="inline-flex items-center gap-2 bg-[#e87722] text-white px-7 py-4 rounded-xl font-bold text-base hover:bg-[#c5611a] transition-all duration-200 shadow-[0_6px_20px_rgba(232,119,34,0.45)] hover:shadow-[0_8px_28px_rgba(232,119,34,0.55)] hover:-translate-y-0.5"
               >
-                Hizmetlerimiz
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-              <Link
-                href="/iletisim"
+                <Phone className="w-5 h-5" />
+                0543 305 74 84
+              </a>
+              <a
+                href="https://wa.me/905433057484"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-transparent text-white border-2 border-white/50 px-7 py-4 rounded-xl font-bold text-base hover:bg-white hover:text-[#1a2d5a] hover:border-white transition-all duration-200 hover:-translate-y-0.5"
               >
-                Bize Ulaşın
-              </Link>
+                <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 flex-shrink-0">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
+                WhatsApp&apos;tan Yaz
+              </a>
             </motion.div>
 
             {/* Phone pills */}
@@ -334,55 +367,14 @@ function HeroSection() {
             className="hidden lg:flex items-center justify-center"
           >
             <div className="relative w-full max-w-[560px] h-[400px] rounded-3xl overflow-hidden border border-white/10 shadow-[0_30px_80px_rgba(0,0,0,0.4)]">
-              {/* Gradient background */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#243f7d] via-[#1a2d5a] to-[#0d1b36]" />
-
-              {/* Glass/window SVG illustration */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <svg
-                  viewBox="0 0 400 300"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-[380px] h-[280px]"
-                >
-                  {/* Window frame outer */}
-                  <rect x="40" y="30" width="320" height="240" rx="8" stroke="rgba(90,172,204,0.6)" strokeWidth="3" fill="rgba(255,255,255,0.03)" />
-                  {/* Center cross divider */}
-                  <line x1="200" y1="30" x2="200" y2="270" stroke="rgba(90,172,204,0.5)" strokeWidth="2.5" />
-                  <line x1="40" y1="150" x2="360" y2="150" stroke="rgba(90,172,204,0.5)" strokeWidth="2.5" />
-
-                  {/* Top-left glass pane */}
-                  <rect x="46" y="36" width="148" height="108" rx="4" fill="rgba(90,172,204,0.08)" />
-                  <rect x="46" y="36" width="148" height="108" rx="4" stroke="rgba(90,172,204,0.25)" strokeWidth="1" />
-                  {/* Glare */}
-                  <line x1="60" y1="48" x2="90" y2="48" stroke="rgba(255,255,255,0.4)" strokeWidth="2" strokeLinecap="round" />
-                  <line x1="60" y1="58" x2="78" y2="58" stroke="rgba(255,255,255,0.25)" strokeWidth="1.5" strokeLinecap="round" />
-
-                  {/* Top-right glass pane */}
-                  <rect x="206" y="36" width="148" height="108" rx="4" fill="rgba(90,172,204,0.08)" />
-                  <rect x="206" y="36" width="148" height="108" rx="4" stroke="rgba(90,172,204,0.25)" strokeWidth="1" />
-                  <line x1="220" y1="48" x2="250" y2="48" stroke="rgba(255,255,255,0.4)" strokeWidth="2" strokeLinecap="round" />
-                  <line x1="220" y1="58" x2="238" y2="58" stroke="rgba(255,255,255,0.25)" strokeWidth="1.5" strokeLinecap="round" />
-
-                  {/* Bottom-left glass pane */}
-                  <rect x="46" y="156" width="148" height="108" rx="4" fill="rgba(90,172,204,0.05)" />
-                  <rect x="46" y="156" width="148" height="108" rx="4" stroke="rgba(90,172,204,0.2)" strokeWidth="1" />
-
-                  {/* Bottom-right glass pane */}
-                  <rect x="206" y="156" width="148" height="108" rx="4" fill="rgba(90,172,204,0.05)" />
-                  <rect x="206" y="156" width="148" height="108" rx="4" stroke="rgba(90,172,204,0.2)" strokeWidth="1" />
-
-                  {/* Handle left */}
-                  <rect x="186" y="140" width="28" height="20" rx="4" fill="rgba(232,119,34,0.7)" />
-                  <rect x="186" y="140" width="28" height="20" rx="4" stroke="rgba(232,119,34,0.9)" strokeWidth="1" />
-
-                  {/* Decorative dots */}
-                  <circle cx="80" cy="200" r="3" fill="rgba(232,119,34,0.5)" />
-                  <circle cx="320" cy="200" r="3" fill="rgba(232,119,34,0.5)" />
-                  <circle cx="80" cy="90" r="3" fill="rgba(90,172,204,0.5)" />
-                  <circle cx="320" cy="90" r="3" fill="rgba(90,172,204,0.5)" />
-                </svg>
-              </div>
+              <Image
+                src="/pencere.svg"
+                alt="DHS Cam Balkon Sistemleri"
+                width={600}
+                height={450}
+                className="w-full h-full object-cover"
+                priority
+              />
 
               {/* Overlay text badge */}
               <div className="absolute bottom-5 left-5 right-5 flex items-center justify-between">

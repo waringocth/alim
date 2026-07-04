@@ -139,7 +139,7 @@ export default function HizmetlerPage() {
               variants={fadeInUp}
               className="inline-block text-xs font-bold tracking-widest uppercase text-[#e87722] bg-[#e87722]/15 border border-[#e87722]/25 px-4 py-2 rounded-full mb-5"
             >
-              10 Farklı Çözüm
+              14 Farklı Çözüm
             </motion.span>
             <motion.h1
               variants={fadeInUp}
@@ -153,7 +153,7 @@ export default function HizmetlerPage() {
               className="h-1 w-16 bg-[#e87722] rounded-full mb-6"
             />
             <motion.p variants={fadeInUp} className="text-white/75 text-lg leading-relaxed">
-              Cam balkon sistemlerinden alüminyum doğramaya, pergolelerden duşakabin çözümlerine kadar 10 farklı hizmette İstanbul&apos;un 39 ilçesinde profesyonel montaj ve kurulum sunuyoruz.
+              Cam balkon sistemlerinden alüminyum doğramaya, pergolelerden duşakabin çözümlerine kadar 14 farklı hizmette İstanbul&apos;un 39 ilçesinde profesyonel montaj ve kurulum sunuyoruz.
             </motion.p>
           </motion.div>
         </div>

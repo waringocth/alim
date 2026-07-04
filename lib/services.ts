@@ -9,6 +9,9 @@ import {
   Filter,
   ArrowLeftRight,
   Droplets,
+  PanelTopOpen,
+  LayoutTemplate,
+  ScanLine,
   LucideIcon,
 } from "lucide-react";
 
@@ -275,6 +278,106 @@ export const services: Service[] = [
       "Duşakabin Sistemleri — DHS ile modern ve şık duşakabin çözümleri. İstanbul'da ölçüye özel üretim ve profesyonel montaj.",
     gradient: "from-[#0f4a6a] to-[#1a2d5a]",
     accentColor: "#5aaccc",
+  },
+  {
+    slug: "biyoklimatik-pergole",
+    title: "Biyoklimatik Pergole",
+    subtitle: "Akıllı Hava Kontrollü Teras Sistemi",
+    icon: Wind,
+    shortDescription:
+      "Döner kanatlı alüminyum lameller sayesinde hava ve ışığı istediğiniz gibi kontrol edin. Yağmur sensörü ve uzaktan kumanda ile tam otomatik kullanım.",
+    longDescription: [
+      "Biyoklimatik pergole sistemleri, motorlu döner lamel teknolojisiyle hava ve ışığı tam anlamıyla kontrol altına alan akıllı teras çözümleridir. DHS olarak sunduğumuz biyoklimatik pergoleler, alüminyum lamellerin 0° ile 135° arasında döndürülebildiği hassas motor sistemiyle hem serin hem de güneşli bir dış mekân deneyimi sunar.",
+      "Entegre yağmur sensörü, ilk damlayı algıladığı anda lamelleri otomatik olarak kapatarak terasınızı yağıştan korur. Rüzgar sensörü ise belirli bir hız eşiğinde devreye girerek lamelleri güvenli konuma alır. Uzaktan kumanda ve akıllı ev sistemleriyle (Google Home, Amazon Alexa) entegrasyon sayesinde sistemi telefononuzdan yönetebilirsiniz.",
+      "Yüksek dayanımlı alüminyum profil yapısı ve deniz korozyon dirençli kaplama ile dört mevsim kullanım imkânı sunan bu sistemlere isteğe bağlı entegre LED aydınlatma, yan cam paneller ve ısıtma sistemleri de eklenebilir.",
+    ],
+    features: [
+      "Motorlu döner lamel sistemi",
+      "Yağmur sensörü ile otomatik kapanma",
+      "Uzaktan kumanda ve akıllı ev uyumlu",
+      "Rüzgar dayanımlı alüminyum profil",
+      "Entegre LED aydınlatma seçeneği",
+      "Her mevsim kullanım imkânı",
+    ],
+    metaDescription:
+      "Biyoklimatik Pergole Sistemleri — DHS ile motorlu döner lamel, yağmur sensörü ve akıllı ev uyumlu akıllı teras çözümleri. İstanbul genelinde montaj.",
+    gradient: "from-[#1a4a2a] to-[#0f3d3a]",
+    accentColor: "#4caf73",
+  },
+  {
+    slug: "zip-perde",
+    title: "Zip Perde Sistemleri",
+    subtitle: "Dış Cephe Güneş Kontrol Perdesi",
+    icon: PanelTopOpen,
+    shortDescription:
+      "Fermuarlı yandan kılavuz sistemi sayesinde rüzgarda sabit kalan, ışık ve sıcaklığı kontrol eden modern dış cephe perdesi çözümü.",
+    longDescription: [
+      "Zip perde sistemleri, kumaşın her iki yanında yer alan fermuar kılavuzu sayesinde rüzgar altında bile tamamen sabit kalan üstün performanslı dış cephe güneş kontrol çözümleridir. DHS olarak uyguladığımız zip perde sistemleri, güneş ışığını %95'e kadar engelleyerek iç mekân sıcaklığını düşürür ve klima maliyetlerini önemli ölçüde azaltır.",
+      "Su geçirmez, yüksek dayanımlı teknik kumaşlar kullanılan sistemimiz; balkon, teras, kış bahçesi ve cephe uygulamalarında güvenle tercih edilmektedir. Motorlu versiyonlarda uzaktan kumanda ve güneş sensörü entegrasyonu mümkünken manuel versiyonlar krank mekanizmasıyla kolayca çalıştırılır.",
+      "Geniş renk ve desen arşivimizden seçeceğiniz kumaşla evinizin dış cephesine estetik bir dokunuş katabilirsiniz. Alüminyum kasa ve üst kutu yapısı ise sistemi dış hava koşullarına karşı uzun ömürlü kılar.",
+    ],
+    features: [
+      "Fermuar kılavuzlu sabit sistem",
+      "Güneş ışığını %95'e kadar engelleme",
+      "Motorlu veya manuel seçenek",
+      "Su geçirmez yüksek dayanımlı kumaş",
+      "Renk ve desen seçenekleri",
+      "Balkon ve teras uyumlu",
+    ],
+    metaDescription:
+      "Zip Perde Sistemleri — DHS ile dış cephe güneş kontrol perdesi, fermuar kılavuzlu sistem ve motorlu seçenekler. İstanbul genelinde montaj.",
+    gradient: "from-[#2d1a5a] to-[#1a2d5a]",
+    accentColor: "#a78bfa",
+  },
+  {
+    slug: "wintente",
+    title: "Wintente Sistemleri",
+    subtitle: "Cam & Kumaş Hibrit Cephe Sistemi",
+    icon: LayoutTemplate,
+    shortDescription:
+      "Cam balkon ile tente sistemini bir arada sunan hibrit çözüm. Kış aylarında cam kapatma, yaz aylarında tente kullanımıyla dört mevsim konfor sağlar.",
+    longDescription: [
+      "Wintente sistemi, cam balkon ve tente teknolojilerini tek bir çerçevede birleştiren yenilikçi bir hibrit cephe çözümüdür. Kış aylarında ısı ve ses yalıtımı sağlayan cam kanatlar kapatılırken yaz aylarında camlar açılıp yerine tente kumaşı indirilerek serin ve ferah bir teras ortamı oluşturulur.",
+      "DHS olarak uyguladığımız Wintente sistemleri yüksek kaliteli alüminyum taşıyıcı profiller ve dayanıklı teknik kumaşlarla üretilmektedir. Özel ölçüye üretim sayesinde her boyuttaki balkon ve terasa mükemmel uyum sağlar; kolay açılır-kapanır mekanizması günlük kullanımı zahmetsiz kılar.",
+      "Dört mevsim konfor sağlayan bu sistem, özellikle dar balkonu olan kullanıcılar için çift işlevli tasarımıyla öne çıkmaktadır. Üst düzey ısı ve ses yalıtımı özellikleriyle şehir hayatında huzurlu bir yaşam alanı yaratır.",
+    ],
+    features: [
+      "Cam + tente hibrit sistem",
+      "Dört mevsim kullanım",
+      "Yüksek ısı ve ses yalıtımı",
+      "Alüminyum taşıyıcı profil",
+      "Özel ölçüye üretim",
+      "Kolay açılır-kapanır mekanizma",
+    ],
+    metaDescription:
+      "Wintente Sistemleri — DHS ile cam ve kumaş hibrit cephe çözümü, dört mevsim konfor. İstanbul genelinde profesyonel montaj.",
+    gradient: "from-[#1a2d5a] to-[#0d3a5a]",
+    accentColor: "#5aaccc",
+  },
+  {
+    slug: "fotoselli-kapi",
+    title: "Fotosel Kapı Sistemleri",
+    subtitle: "Otomatik Kayar Kapı Sistemleri",
+    icon: ScanLine,
+    shortDescription:
+      "AVM, ofis, hastane ve site girişlerine özel fotosel sensörlü otomatik kayar kapı sistemleri. Yüksek trafik kapasitesi ve güvenlik odaklı tasarım.",
+    longDescription: [
+      "Fotosel kapı sistemleri, yoğun trafikli girişlerde konfor, hız ve güvenliği bir arada sunan otomatik kayar kapı çözümleridir. DHS olarak uyguladığımuz sistemler; AVM, hastane, ofis, otel ve site girişlerine özel olarak tasarlanmış, fotosel ve radar sensör teknolojisiyle donatılmıştır. Yaklaşan kişiyi algılar algılamaz kapı sessizce açılır ve geçiş tamamlandığında kapanır.",
+      "Tek veya çift kanatlı kayar seçenekleriyle sunulan sistemimiz, paslanmaz çelik ve anodize alüminyum kasa ile uzun yıllar boyunca dayanıklılığını korur. Acil durum manuel açma özelliği sayesinde güç kesintisi durumlarında bile güvenli tahliye imkânı sağlanır.",
+      "Düşük enerji tüketimli motor teknolojisi ve peryodik bakım protokolü ile işletme maliyetlerinizi düşük tutarken yüksek trafik kapasitesinin gerektirdiği yoğun kullanıma kolaylıkla dayanır. Kurulum sonrası bakım ve servis garantisi de tarafımızca sağlanmaktadır.",
+    ],
+    features: [
+      "Fotosel ve radar sensör seçeneği",
+      "Tek veya çift kanatlı kayar sistem",
+      "Acil durum manuel açma",
+      "Paslanmaz çelik ve alüminyum kasa",
+      "Düşük enerji tüketimi",
+      "Bakım ve servis garantisi",
+    ],
+    metaDescription:
+      "Fotosel Kapı Sistemleri — DHS ile AVM, ofis ve hastane girişleri için otomatik kayar kapı çözümleri. İstanbul genelinde montaj ve servis.",
+    gradient: "from-[#1a2d5a] to-[#2d1a1a]",
+    accentColor: "#e87722",
   },
 ];
 
