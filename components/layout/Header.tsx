@@ -48,7 +48,7 @@ export default function Header() {
             {/* Logo */}
             <Link href="/" className="flex-shrink-0">
               <div className="w-[140px] h-[50px] bg-[#1a2d5a] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm tracking-widest">DHS LOGO</span>
+                <span className="text-white font-bold text-sm tracking-widest">DHS</span>
               </div>
             </Link>
 
@@ -122,7 +122,7 @@ export default function Header() {
               {/* Drawer Header */}
               <div className="flex items-center justify-between px-6 h-16 border-b border-gray-100 bg-[#1a2d5a]">
                 <div className="w-[120px] h-[40px] bg-white/15 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-xs tracking-widest">DHS LOGO</span>
+                  <span className="text-white font-bold text-xs tracking-widest">DHS</span>
                 </div>
                 <button
                   onClick={() => setMobileOpen(false)}

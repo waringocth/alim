@@ -342,23 +342,23 @@ function HeroSection() {
             {/* Pills */}
             <motion.div variants={staggerItem} className="flex flex-row gap-2 w-full md:flex-wrap md:gap-3 md:w-auto">
               <a
-                href="tel:05433057484"
-                className="flex flex-1 flex-col justify-center text-xs py-2 px-3 md:flex-none md:flex-row md:items-center md:gap-2.5 bg-white/10 text-white rounded-xl border border-white/15 transition-all duration-200 active:bg-white/20 md:px-4 md:py-2.5 md:text-sm md:font-medium hover:bg-white/18 backdrop-blur-sm hover:border-white/30"
+                href="tel:+905433057484"
+                className="flex flex-1 flex-col justify-center text-xs py-2 px-3 md:flex-none md:flex-row md:items-center md:gap-2.5 bg-white/10 text-white rounded-xl border border-white/15 transition-all duration-200 active:bg-white/20 md:px-4 md:py-2.5 md:text-sm md:font-medium hover:bg-white/18 backdrop-blur-sm hover:border-white/30 cursor-pointer"
               >
                 <Phone className="hidden md:block w-4 h-4 text-[#e87722] flex-shrink-0" />
                 <div className="flex flex-col leading-tight">
                   <span className="text-white/50 text-[10px] font-semibold tracking-wide uppercase mb-0.5 md:mb-0">Hüzeyfe TURHAN</span>
-                  <span>0543 305 74 84</span>
+                  <span className="flex items-center gap-1 md:gap-0"><Phone className="md:hidden w-[10px] h-[10px] text-[#e87722]" /> 0543 305 74 84</span>
                 </div>
               </a>
               <a
-                href="tel:05302418755"
-                className="flex flex-1 flex-col justify-center text-xs py-2 px-3 md:flex-none md:flex-row md:items-center md:gap-2.5 bg-white/10 text-white rounded-xl border border-white/15 transition-all duration-200 active:bg-white/20 md:px-4 md:py-2.5 md:text-sm md:font-medium hover:bg-white/18 backdrop-blur-sm hover:border-white/30"
+                href="tel:+905302418755"
+                className="flex flex-1 flex-col justify-center text-xs py-2 px-3 md:flex-none md:flex-row md:items-center md:gap-2.5 bg-white/10 text-white rounded-xl border border-white/15 transition-all duration-200 active:bg-white/20 md:px-4 md:py-2.5 md:text-sm md:font-medium hover:bg-white/18 backdrop-blur-sm hover:border-white/30 cursor-pointer"
               >
                 <Phone className="hidden md:block w-4 h-4 text-[#e87722] flex-shrink-0" />
                 <div className="flex flex-col leading-tight">
                   <span className="text-white/50 text-[10px] font-semibold tracking-wide uppercase mb-0.5 md:mb-0">Sefer KÖSE</span>
-                  <span>0530 241 87 55</span>
+                  <span className="flex items-center gap-1 md:gap-0"><Phone className="md:hidden w-[10px] h-[10px] text-[#e87722]" /> 0530 241 87 55</span>
                 </div>
               </a>
             </motion.div>
