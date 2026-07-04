@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/layout/WhatsAppButton";
+import { GoogleTagManager } from '@next/third-parties/google';
 
 const inter = Inter({
   variable: "--font-inter",
@@ -50,6 +51,9 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
+  alternates: {
+    canonical: "https://www.dhscamsistemleri.com",
+  },
 };
 
 const jsonLd = {
@@ -86,6 +90,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col antialiased bg-white text-[#1a1a2e]">
+        <GoogleTagManager gtmId="GTM-PPK474XP" />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

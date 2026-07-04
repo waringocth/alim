@@ -5,11 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
+    "@next/third-parties": "^16.2.10",
     "framer-motion": "^12.42.0",
     "gray-matter": "^4.0.3",
     "lucide-react": "^1.21.0",
