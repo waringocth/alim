@@ -1,6 +1,9 @@
 "use client";
 
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
+import { keywordMap, defaultHero } from "@/lib/keywordMap";
+import { locationIdMap } from "@/lib/locationIds";
 import { motion, useInView, Variants } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
@@ -255,7 +258,24 @@ const staggerItem: Variants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
 };
 
-function HeroSection() {
+function HeroContent() {
+  const searchParams = useSearchParams();
+  const kwParam = searchParams.get("kw")?.toLowerCase() || "";
+  const locParam = searchParams.get("loc") || "";
+
+  const locData = locationIdMap[locParam];
+  const locationPrefix = locData ? `${locData.ilce} ` : "";
+
+  const keywordContent = Object.entries(keywordMap)
+    .sort((a, b) => b[0].length - a[0].length)
+    .find(([key]) => kwParam.includes(key))?.[1] || null;
+
+  const content = keywordContent || defaultHero;
+
+  const finalH1 = locData && keywordContent ? `${locationPrefix}${content.h1}` : content.h1;
+  const finalSubtitle = content.subtitle;
+  const finalBadge = content.badge;
+
   return (
     <section
       className="relative bg-[#1a2d5a] overflow-hidden h-screen flex flex-col justify-center px-5 pt-20 pb-8 md:py-0 md:h-auto md:min-h-screen md:flex-row md:items-center md:px-0"
@@ -295,7 +315,7 @@ function HeroSection() {
             <motion.div variants={staggerItem} className="flex md:flex mb-3 md:mb-6 overflow-hidden">
               <span className="inline-flex items-center gap-2 bg-[#e87722]/20 text-[#e87722] border border-[#e87722]/30 text-[10px] md:text-xs font-bold tracking-widest uppercase px-4 py-2 rounded-full whitespace-nowrap">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#e87722] animate-pulse" />
-                İstanbul&apos;un Güvenilir Cam Sistemi Uzmanı
+                {finalBadge}
               </span>
             </motion.div>
 
@@ -304,9 +324,15 @@ function HeroSection() {
               variants={staggerItem}
               className="text-2xl md:text-5xl font-bold leading-tight mb-4 text-white md:font-extrabold md:leading-[1.15] md:mb-6 lg:text-[3.25rem] xl:text-6xl"
             >
-              İstanbul&apos;un Güvenilir{" "}
-              <span className="text-[#e87722]">Alüminyum &amp; Cam Balkon</span>{" "}
-              Sistemleri Uzmanı
+              {finalH1.includes("Alüminyum & Cam Balkon") ? (
+                <>
+                  {finalH1.split("Alüminyum & Cam Balkon")[0]}
+                  <span className="text-[#e87722]">Alüminyum &amp; Cam Balkon</span>
+                  {finalH1.split("Alüminyum & Cam Balkon")[1]}
+                </>
+              ) : (
+                finalH1
+              )}
             </motion.h1>
 
             {/* Subtitle */}
@@ -314,7 +340,7 @@ function HeroSection() {
               variants={staggerItem}
               className="block text-white/75 text-sm md:text-base leading-relaxed mb-4 md:mb-10 max-w-xl"
             >
-              10 yıllık deneyimle İstanbul&apos;un tüm ilçelerinde profesyonel montaj ve kurulum hizmetleri sunuyoruz.
+              {finalSubtitle}
             </motion.p>
 
             {/* CTAs */}
@@ -419,6 +445,14 @@ function HeroSection() {
         </svg>
       </div>
     </section>
+  );
+}
+
+function HeroSection() {
+  return (
+    <Suspense fallback={<div className="h-screen bg-[#1a2d5a]" />}>
+      <HeroContent />
+    </Suspense>
   );
 }
 
